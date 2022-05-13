@@ -1,0 +1,250 @@
+/*------------ RESET CSS ---------------*/
+html {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+  input,
+  textarea,
+  select,
+  button {
+    outline: none;
+  }
+  input {
+    line-height: normal;
+  }
+  label,
+  button {
+    cursor: pointer;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  body {
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    background: #def3fd;
+  }
+
+/*========================================*/
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f0defd;
+    width: 500px;
+    height: 200px;
+    padding: 24px 48px;
+    border-radius: 24px;
+    border: 2px solid #fcf7de;
+}
+
+#loginForm h2 {
+    margin-bottom: 24px;
+    color: #484848;
+}
+
+#txtUsername {
+    width: 75%;
+    line-height: 1.5;
+    padding: 4px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(173, 173, 173);
+}
+
+#btnRegister {
+    width: 100px;
+    padding: 8px 0;
+    cursor: pointer;
+    color: #363636;
+    font-weight: bold;
+    background: #defde0;
+    border: 0px;
+    border-radius: 12px;
+}
+
+#btnRegister:hover {
+    background: #a2ffa8;
+}
+
+#chatForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #f0defd;
+    width: 1280px;
+    height: 800px;
+    padding: 24px 48px;
+    border-radius: 24px;
+    border: 1px solid #fcf7de;
+}
+
+.memberList {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid #fff;
+    padding: 32px 16px;
+    height: 100%;
+}
+
+.memberList h2 {
+    margin-bottom: 32px;
+    font-size: 1.8rem;
+}
+
+.onlineMember {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.onlineMember span.icon {
+    padding: 6px 6px;
+    border-radius: 50%;
+    background: #defde0;
+}
+
+.onlineMember span.name {
+    font-size: 1.3rem;
+    padding-left: 8px;
+}
+
+
+.chatRoom {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    border: 1px solid #fff;
+    padding: 32px 16px 16px 16px;
+}
+
+.chatRoom__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 24px;
+}
+
+.chatRoom__header #btnLeave{
+    padding: 4px 8px;
+    background: transparent;
+    margin-left: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #6d6d6d;
+}
+
+.chatRoom__header #btnLeave:hover {
+    background: rgb(255, 221, 199);
+}
+
+.chatRoom__header span {
+    font-size: 1.25rem;
+}
+
+.currentUser {
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.chatRoom__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 32px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #fff;
+}
+
+.messageArea {
+    flex-grow: 1;
+}
+
+.myMessage {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 48px;
+    margin-bottom: 4px;
+}
+
+.myMessage__content {
+    background: #defde0;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.friendMessage {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 48px;
+    margin-bottom: 4px;
+}
+
+.friendMessage__content {
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.detect_typing {
+    display: none;
+    width: 25%;
+    background: #fff;
+    padding: 4px 8px;
+    border-top-right-radius: 8px;
+}
+
+.chatRoom__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px;
+}
+
+#sendMessage {
+    width: 90%;
+    padding: 8px 16px;
+    font-size: 1.25em;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.sendMessageBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #def3fd;
+    padding: 8px 16px;
+    border-radius: 12px;
+}

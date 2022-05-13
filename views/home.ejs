@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket IO</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="loginForm">
+            <h2>Welcome to SocketIO chatroom</h2>
+            <input type="text" id="txtUsername" placeholder="Enter your nickname">
+            <input type="button" value="Join" id="btnRegister">
+        </div>
+        <div id="chatForm">
+            <div class="memberList">
+                <h2>Online users</h2>
+                <div id="memberList">
+                    
+                </div>
+            </div>
+            <div class="chatRoom">
+                <div class="chatRoom__header">
+                    <span>Hello, </span>
+                    <span class="currentUser">Scott</span>
+                    <input type="button" value="Leave" id="btnLeave">
+                </div>
+                <div class="chatRoom__content">
+                    <div class="messageArea">
+                        <!-- <div class="myMessage">
+                            <div class="myMessage__content">
+                                <span id="myMessage">Hello</span>
+                            </div>
+                        </div> -->
+                        <!-- <div class="friendMessage">
+                            <div class="friendMessage__content">
+                                <span id="friendMessage">Hello</span>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="detect_typing">
+                        <span>Someone is typing ...</span>
+                    </div>
+                </div>
+                <div class="chatRoom__footer">
+                    <input type="text" id="sendMessage" placeholder="Enter your message...">
+                    <div class="sendMessageBtn">
+                        <span class="material-symbols-outlined">near_me</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
